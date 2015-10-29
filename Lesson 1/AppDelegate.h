@@ -9,6 +9,7 @@
 // Из надоевшего кота может получиться отличный кролик в сметане ;)
 
 #import <UIKit/UIKit.h>
+#import <PMCalendar/PMCalendar.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

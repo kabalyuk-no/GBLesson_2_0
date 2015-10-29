@@ -13,6 +13,7 @@
 		0A5DCAB71BDE981D00C67BBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DCAB51BDE981D00C67BBA /* Main.storyboard */; };
 		0A5DCAB91BDE981D00C67BBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DCAB81BDE981D00C67BBA /* Assets.xcassets */; };
 		0A5DCABC1BDE981D00C67BBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5DCABA1BDE981D00C67BBA /* LaunchScreen.storyboard */; };
+		63550BD48E553160EEE33DA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71EC72B1DBFEDF912168BF6C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		0A5DCAB81BDE981D00C67BBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A5DCABB1BDE981D00C67BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A5DCABD1BDE981D00C67BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C80D7E077F2A3AE27301A69 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		71EC72B1DBFEDF912168BF6C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F138DDD7C38633AF4F6268D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63550BD48E553160EEE33DA8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				0A5DCAAB1BDE981D00C67BBA /* Lesson 1 */,
 				0A5DCAAA1BDE981D00C67BBA /* Products */,
+				6374A7A50C787949CF6DD9C2 /* Pods */,
+				F5956540F5FFEE881E895F22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6374A7A50C787949CF6DD9C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C80D7E077F2A3AE27301A69 /* Pods.debug.xcconfig */,
+				F138DDD7C38633AF4F6268D3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F5956540F5FFEE881E895F22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71EC72B1DBFEDF912168BF6C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A5DCAC01BDE981D00C67BBA /* Build configuration list for PBXNativeTarget "Lesson 1" */;
 			buildPhases = (
+				CB65573A0383F7D27FB2DD34 /* Check Pods Manifest.lock */,
 				0A5DCAA51BDE981D00C67BBA /* Sources */,
 				0A5DCAA61BDE981D00C67BBA /* Frameworks */,
 				0A5DCAA71BDE981D00C67BBA /* Resources */,
+				88DFA71C5B1B155AB9E65079 /* Embed Pods Frameworks */,
+				5A3A0C9A54B8055D15D95664 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +170,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A3A0C9A54B8055D15D95664 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88DFA71C5B1B155AB9E65079 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB65573A0383F7D27FB2DD34 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A5DCAA51BDE981D00C67BBA /* Sources */ = {
@@ -261,9 +336,11 @@
 		};
 		0A5DCAC11BDE981D00C67BBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C80D7E077F2A3AE27301A69 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lesson 1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "GB.Lesson-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +349,11 @@
 		};
 		0A5DCAC21BDE981D00C67BBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F138DDD7C38633AF4F6268D3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lesson 1/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "GB.Lesson-1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +379,7 @@
 				0A5DCAC21BDE981D00C67BBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
